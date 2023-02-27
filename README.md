@@ -5,10 +5,10 @@ Then type in "eslint src" and eslint should hang and start gobbling memory.
 
 After it has taken about 4 gigs of memory, node should throw a out of memory error.
 
-It seems to be a complex through the interplay typescript-eslint and i18next.
-I first discovered it by upgrading to i18next version 22. It can be seen from this repo
-as well, if i18next is removed, the bug disappears. This is what I have tried to change,
-and then notice that the bug goes away:
+It seems to be a complex bug through the interplay between typescript-eslint and i18next.
+I first discovered it by upgrading to i18next version 22. They did a major typescript rewrite
+for that version. It can be seen from this repo as well, if i18next is removed, the bug disappears.
+These are things I have tried to change, and then notice that the bug goes away:
 
 * remove i18next.d.ts file (or any code in there)
 * remove i18next package
