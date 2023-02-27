@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.53.0",
+    "eslint": "^8.35.0"
+  },
+  "dependencies": {
+    "i18next": "^22.4.10"
+  },
+  "scripts": {
+    "lint": "eslint src"
+  }
+}
